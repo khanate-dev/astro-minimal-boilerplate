@@ -1,6 +1,9 @@
 # 🚀 Astro Starter
 
-[![Built with Astro](https://astro.badg.es/v1/built-with-astro.svg)](https://astro.build)
+![Astro](https://img.shields.io/badge/-Astro-23272f?style=for-the-badge&logo=astro)
+![PNPM](https://img.shields.io/badge/-Pnpm-23272f?style=for-the-badge&logo=pnpm)
+![ESLint](https://img.shields.io/badge/-ESLint-23272f?style=for-the-badge&logo=eslint)
+![Prettier](https://img.shields.io/badge/-Prettier-23272f?style=for-the-badge&logo=prettier)
 
 Minimal starter for [Astro](https://astro.build) projects.
 
