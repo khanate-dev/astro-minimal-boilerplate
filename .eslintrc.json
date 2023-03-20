@@ -1,0 +1,65 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:astro/recommended"
+  ],
+  "overrides": [
+    {
+      "files": ["*.astro"],
+      "parser": "astro-eslint-parser",
+      "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "extraFileExtensions": [".astro"]
+      },
+      "rules": {}
+    }
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": ["tsconfig.json"],
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "unused-imports"],
+  "rules": {
+    "no-console": [
+      "error",
+      {
+        "allow": ["warn", "error", "info"]
+      }
+    ],
+    "unused-imports/no-unused-imports": "error",
+    "no-unexpected-multiline": "off",
+    "no-mixed-spaces-and-tabs": "off",
+    "@typescript-eslint/no-extra-semi": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-inferrable-types": "off",
+    "@typescript-eslint/no-unnecessary-type-constraint": "off",
+    "@typescript-eslint/no-unnecessary-condition": "error",
+    "no-duplicate-imports": [
+      "error",
+      {
+        "includeExports": true
+      }
+    ],
+    "object-shorthand": ["error", "always"]
+  },
+  "ignorePatterns": [
+    "node_modules/",
+    "dist/",
+    "coverage/",
+    "build/",
+    "public/",
+    "src/**/*.test.ts",
+    "src/**/*.test.tsx",
+    "src/**/*.spec.ts",
+    "src/**/*.spec.tsx",
+    "*.d.ts"
+  ]
+}

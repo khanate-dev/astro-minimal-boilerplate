@@ -1,0 +1,8 @@
+dist
+coverage
+.vscode
+.husky
+node_modules
+README.md
+pnpm-lock.yaml
+*.d.ts
